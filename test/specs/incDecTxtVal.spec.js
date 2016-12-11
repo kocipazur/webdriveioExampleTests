@@ -16,9 +16,9 @@ describe('check in-cart quantity manipulation by textfield value', function() {
         assert.equal(itemQuantityField.getValue(), '2');
     });
     it('should decrease value', function () {
-	browser.setValue('#product-quantity-852554', '2');
+	browser.setValue('#product-quantity-852554', '1');
 	var itemQuantityField = $('#product-quantity-852554');
 
-        assert.equal(itemQuantityField.getValue(), '2');		
+        assert.equal(itemQuantityField.getValue(), '1');		
     });
 });
